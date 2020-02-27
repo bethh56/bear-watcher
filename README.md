@@ -1,1 +1,1 @@
-# bear-watcher
+# Bear Watcher
