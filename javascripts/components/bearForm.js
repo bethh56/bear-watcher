@@ -1,5 +1,4 @@
-// import printToDom from "../javascripts/helpers/utils.js"
-import bearData from "../helpers/data/bearData.js"
+// import bearData from "../helpers/data/bearData.js"
 
 
 const submitEvent = () => {
@@ -8,14 +7,14 @@ const submitEvent = () => {
 };
 
 const bearFormEvents = (e) => {
-    const seenBear = bearData.getBear();
+    //const seenBear = bearData.getBear();
     const bearSighting = {
         id: `bear${seenBear.length + 1}`,
         name: document.getElementById("bear-name-input").value,
         image: document.getElementById("image-url-input").value
     }
-    seenBear.push(bearSighting);   
-    console.log(bearSighting);
+    // seenBear.push(bearSighting);   
+    // console.log(bearSighting);
     document.getElementById("new-bear").reset();
 };
 
