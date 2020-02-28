@@ -1,1 +1,7 @@
-console.log("Hey there!");
+import bearForm from './components/bearForm.js';
+
+const init = () => {
+    bearForm.submitEvent();
+}
+
+init();
