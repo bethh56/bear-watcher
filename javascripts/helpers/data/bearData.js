@@ -1,9 +1,11 @@
-// import bearForm from '../../components/bearForm.js';
+const bears = [
+    {
+        id: "bear1",
+        name: "fkjdal",
+        image: "kjdsfa"
+    }
+];
 
-const bear = [];
+const getBears = () => { return bears };
 
-const getBear = () => { return bear };
-
-getBear();
-
-export default { getBear };
+export default { getBears };

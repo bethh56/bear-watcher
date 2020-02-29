@@ -2,8 +2,8 @@ import bearForm from './components/bearForm.js';
 import river from './components/river.js';
 
 const init = () => {
-    bearForm.submitEvent();
-    river.bearCard();
+    bearForm.formBuilder();
+    river.buildBearCards();
 }
 
 init();

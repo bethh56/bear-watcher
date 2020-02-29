@@ -1,23 +1,21 @@
 import util from '../helpers/util.js';
-// import bearData from "../helpers/data/bearData.js"
-import bearForm from '../components/bearForm.js';
+import bearData from "../helpers/data/bearData.js"
 
 
-const bearCard = () => {
-    const bearRiverCard = bearData.getBear();
-    
+
+const buildBearCards = () => {
+    const bearCards = bearData.getBears();
+    let domString = "";
+    bearCards.forEach((bears) => {
+    domString += '<div class="card">';
+    domString += `<img src="${bears.image}" class="card-img-top" alt="Picture of Bear seen">`;
+    domString += '<div class="card-body">';
+    domString += `<p class="card-text">${bears.name}</p>`;
+    domString += '</div>';
+    domString += '</div>';
+    });
+
+    util.printToDom("riverBears", domString)
 };
-console.log("hello" , bearCard());
 
-
-// const riverCards = () => {
-//     const bearCard = bearData.getBear();
-//     let domString = "";
-//     domString += "test";
-//     for (let i = 0; i < bearCard; i++) {
-//         domString += `${bearCard[i].name}`;
-//     };
-//     util.printToDom("riverBears", domString)
-// };
-
- export default { bearCard };
+ export default { buildBearCards };
