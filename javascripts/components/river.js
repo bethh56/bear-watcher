@@ -1,10 +1,10 @@
 import util from '../helpers/util.js';
-//import bearData from "../helpers/data/bearData.js"
+// import bearData from "../helpers/data/bearData.js"
 import bearForm from '../components/bearForm.js';
 
 
 const bearCard = () => {
-    const bearRiverCard = bearForm.submitEvent();
+    const bearRiverCard = bearData.getBear();
     
 };
 console.log("hello" , bearCard());

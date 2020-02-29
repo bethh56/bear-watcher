@@ -1,5 +1,4 @@
-// import bearData from "../helpers/data/bearData.js"
-const bear = [];
+import bearData from "../helpers/data/bearData.js"
 
 const submitEvent = () => {
     document.getElementById("bear-form-submit").addEventListener('click', bearFormEvents);
@@ -7,12 +6,13 @@ const submitEvent = () => {
 };
 
 const bearFormEvents = (e) => {
+    const seenBear = bearData.getBear();
     const bearSighting = {
-        id: `bear${bear.length + 1}`,
+        id: `bear${seenBear.length + 1}`,
         name: document.getElementById("bear-name-input").value,
         image: document.getElementById("image-url-input").value
     }
-    bear.push(bearSighting);   
+    seenBear.push(bearSighting);   
     console.log(bearSighting);
     document.getElementById("new-bear").reset();
 };

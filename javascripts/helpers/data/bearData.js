@@ -1,4 +1,4 @@
-import bearForm from '../../components/bearForm.js';
+// import bearForm from '../../components/bearForm.js';
 
 const bear = [];
 
