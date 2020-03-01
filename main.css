@@ -1,15 +1,19 @@
 body {
-    background-color:#DAAD86;
+  background: linear-gradient(to bottom, #daad86 26%, #659dbd 100%) fixed;
+ 
 }
 
-#bear-form {
-  background-color: #DAAD86;  
-}
 
 #bear-form-submit {
     background-color: #8D8751;
     border: solid 2px #FBEEC1;
 }
+
+#bear-card {
+  border: solid 4px #8D8751;
+  border-radius: 2%;
+}
+
 
 /*
 COLOR SCHEMES
