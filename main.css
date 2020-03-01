@@ -9,6 +9,10 @@ body {
     border: solid 2px #FBEEC1;
 }
 
+#bear-card {
+  border: solid 4px #8D8751;
+  border-radius: 2%;
+}
 
 
 /*

@@ -27,7 +27,7 @@ const bearFormEvents = (e) => {
     const bearSighting = {
         id: `bear${seenBear.length + 1}`,
         name: document.getElementById("bear-name-input").value,
-        image: document.getElementById("image-url-input").value
+        image: document.getElementById("image-url-input").value,
     }
     seenBear.push(bearSighting); 
     river.buildBearCards(seenBear);  
