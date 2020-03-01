@@ -1,8 +1,8 @@
 const bears = [
     {
         id: "bear1",
-        name: "fkjdal",
-        image: "kjdsfa"
+        name: "Frank",
+        image: "https://cdn.images.express.co.uk/img/dynamic/128/590x/Grizzly-bear-hunting-759321.jpg"
     }
 ];
 

@@ -31,7 +31,6 @@ const bearFormEvents = (e) => {
     }
     seenBear.push(bearSighting); 
     river.buildBearCards(seenBear);  
-    console.log(bearSighting);
     document.getElementById("new-bear").reset();
 };
 
