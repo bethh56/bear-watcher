@@ -19,15 +19,15 @@ const formBuilder = () => {
     domString += '</form>';
     
     util.printToDom('form-builder' , domString);
-    document.getElementById("bear-form-submit").addEventListener('click', bearFormEvents);
+    $("#bear-form-submit").click(bearFormEvents);
 }
 
 const bearFormEvents = (e) => {
     const seenBear = bearData.getBears();
     const bearSighting = {
         id: `bear${seenBear.length + 1}`,
-        name: document.getElementById("bear-name-input").value,
-        image: document.getElementById("image-url-input").value,
+        name: $("#bear-name-input").val(),
+        image: $("#image-url-input").val(),
     }
     seenBear.push(bearSighting); 
     river.buildBearCards(seenBear);  
