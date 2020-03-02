@@ -12,12 +12,13 @@ const buildBearCards = () => {
     domString += `<img src="${bears.image}" class="card-img-top " alt="Picture of Bear seen">`;
     domString += '<div class="card-body">';
     domString += `<h5 class="card-text text-center">${bears.name}</h5>`;
-    domString += `<div class="row" id="fish-buttons">`;
-    domString += `<div class="col-6" id="fish-attempt">`;
-    domString += '<button type="button" id="bear-form-submit" class="bear-form-button btn btn-block text-white">Attempt</button>';
+    domString += `<h6 class="card-text text-center mt-3 mb-3">Record Bear Fish Catching Activity</h6>`;
+    domString += `<div class="row w-100 mx-auto" id="fish-buttons">`;
+    domString += `<div class="col-6">`;
+    domString += '<button type="button" id="fish-attempt" class="btn btn-danger text-white">Attempted Catch</button>';
     domString += '</div>';
-    domString += `<div class="col-6" id="fish-caught">`;
-    domString += '<button type="button" id="bear-form-submit" class="bear-form-button btn btn-block text-white">Caught</button>';
+    domString += `<div class="col-6">`;
+    domString += '<button type="button" id="fish-caught" class="btn btn-danger text-white">Successful Catch</button>';
     domString += '</div>';
     domString += '</div>';
     domString += '</div>';

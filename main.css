@@ -3,7 +3,6 @@ body {
  
 }
 
-
 #bear-form-submit {
     background-color: #8D8751;
     border: solid 2px #FBEEC1;
@@ -14,6 +13,15 @@ body {
   border-radius: 2%;
 }
 
+#fish-attempt{
+  background-color: #8D8751;
+  border: solid 4px #DAAD86;
+}
+
+#fish-caught{
+  background-color: #8D8751;
+  border: solid 4px #DAAD86;
+}
 
 /*
 COLOR SCHEMES
