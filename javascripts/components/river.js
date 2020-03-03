@@ -26,7 +26,14 @@ const buildBearCards = () => {
     domString += '</div>';
     });
 
-    util.printToDom("riverBears", domString)
+    util.printToDom("riverBears", domString);
+    $("#fish-attempt").click(fishEvents);
+    $("fish-caught").click(fishEvents);
 };
 
- export default { buildBearCards };
+
+const fishEvents = () => {
+    console.log("clicked");
+}
+
+ export default { buildBearCards , fishEvents };
