@@ -15,25 +15,27 @@ const buildBearCards = () => {
     domString += `<h6 class="card-text text-center mt-3 mb-3">Record Bear Fish Catching Activity</h6>`;
     domString += `<div class="row w-100 mx-auto" id="fish-buttons">`;
     domString += `<div class="col-6">`;
-    domString += '<button type="button" id="fish-attempt" class="btn btn-danger text-white">Attempted Catch</button>';
+    domString += `<button type="button" id="${bears.id}" class="btn btn-danger text-white">Attempted Catch</button>`;
     domString += '</div>';
     domString += `<div class="col-6">`;
-    domString += '<button type="button" id="fish-caught" class="btn btn-danger text-white">Successful Catch</button>';
+    domString += `<button type="button" id="${bears.id}" class="btn btn-danger text-white">Successful Catch</button>`;
     domString += '</div>';
     domString += '</div>';
     domString += '</div>';
     domString += '</div>';
     domString += '</div>';
     });
-
     util.printToDom("riverBears", domString);
-    $("#fish-attempt").click(fishEvents);
-    $("fish-caught").click(fishEvents);
+    $(`#${bearCards.id}`).click(fishAttemptEvents);
+    $(`#${bearCards.id}`).click(fishCaughtEvents);
 };
 
-
-const fishEvents = () => {
-    console.log("clicked");
+const fishAttemptEvents = () => {
+    console.log("Attempted");
 }
 
- export default { buildBearCards , fishEvents };
+const fishCaughtEvents = () => {
+    console.log("Caught");
+}
+
+ export default { buildBearCards , fishAttemptEvents , fishCaughtEvents };
