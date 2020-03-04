@@ -11,7 +11,7 @@ const formBuilder = () => {
     domString += '</div>';
     domString += '<div class="form-group">';
     domString += '<label for="image-url"></label>Image URL</label>'
-    domString += '<input type="imageURL" class="form-control" placeholder="Enter Image-URL" id="image-url-input">';
+    domString += '<input type="imageURL" class="form-control" placeholder="Enter Image-URL" id="image-url-input" required>';
     domString += '</div>';
     domString += '<div>';
     domString += '<button type="button" id="bear-form-submit" class="bear-form-button btn btn-block text-white">Submit</button>';
