@@ -12,7 +12,6 @@ const buildBearCards = () => {
     domString += `<img src="${bears.image}" class="card-img-top " alt="Picture of Bear seen">`;
     domString += '<div class="card-body">';
     domString += `<h5 class="card-text text-center">${bears.name}</h5>`;
-    domString += `<h6 class="card-text text-center mt-3 mb-3">Record Bear Fish Catching Activity</h6>`;
     domString += `<div class="row w-100 mx-auto" id="fish-buttons">`;
     domString += '</div>';
     domString += '</div>';
