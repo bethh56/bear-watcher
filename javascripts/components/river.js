@@ -9,15 +9,17 @@ const buildBearCards = () => {
     bearCards.forEach((bears) => {
     domString += '<div class="col-4 mb-2">'
     domString += '<div id="bear-card" class="card mb-4 h-100">';
-    domString += `<img src="${bears.image}" class="card-img-top h-75" alt="Picture of Bear seen">`;
-    domString += '<div class="card-body h-25">';
+    domString += `<img src="${bears.image}" class="card-img-top " alt="Picture of Bear seen">`;
+    domString += '<div class="card-body">';
     domString += `<h5 class="card-text text-center">${bears.name}</h5>`;
+    domString += `<h6 class="card-text text-center mt-3 mb-3">Record Bear Fish Catching Activity</h6>`;
+    domString += `<div class="row w-100 mx-auto" id="fish-buttons">`;
+    domString += '</div>';
     domString += '</div>';
     domString += '</div>';
     domString += '</div>';
     });
-
-    util.printToDom("riverBears", domString)
+    util.printToDom("riverBears", domString);
 };
 
  export default { buildBearCards };
