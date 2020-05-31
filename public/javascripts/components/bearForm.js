@@ -1,5 +1,5 @@
 import bearData from "../helpers/data/bearData.js";
-import river from "../components/river.js";
+import river from "./river.js";
 import util from "../helpers/util.js"
 
 const formBuilder = () => {
